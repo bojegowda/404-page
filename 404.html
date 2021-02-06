@@ -1,32 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grid 404-page </title>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+    }
 
-  <link rel="stylesheet" href="style.css" />
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 280px;
+    }
+
+    @media only screen and (max-width: 280px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
-  <div class="page-404 container">
-    <div class="item header">404 Not Found</div>
-
-    <div class="item image">
-      <img src="image1.png" />
-    </div>
-
-    <div class="item text">
-      <h1>I have bad news for you</h1>
-      <p>The page you are looking for might be removed or is temporarily unavailable</p>
-      <button class="item button">Back to homepage</button>
-    </div>
-
-    <div class="item footer">Boje Gowda @ DevChallenges.io</div>
-
-
-  </div>
+  <h1>Page Not Found</h1>
+  <p>Sorry, but the page you were trying to view does not exist.</p>
 </body>
 
 </html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
